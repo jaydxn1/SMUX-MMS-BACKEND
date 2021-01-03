@@ -94,9 +94,7 @@ def faq1(update, context):
 The process is easily done via /menu and \'Create New\'.')
 
 def faq2(update, context):
-    query = update.callback_query
-    query.answer()
-    query.edit_message_text(text='How do I view created activities/events and registrations?\n\n\
+    context.bot.send_message(chat_id=update.effective_chat.id, text='How do I view created activities/events and registrations?\n\n\
 You may view the information via /menu and \'View Existing\'.')
 
 
